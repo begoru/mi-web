@@ -1,2 +1,3 @@
 # frontend_started
-### Super cambios
+- Compile project `gulp`
+- Watch the project `gulp watch`
