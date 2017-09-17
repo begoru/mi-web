@@ -1,13 +1,18 @@
 let gulp = require('gulp');
 let babel = require('gulp-babel');
 let rollup = require('gulp-rollup');
+let sass = require('gulp-sass');
+var pug = require('gulp-pug');
 
-gulp.task('default', ["html", "es6"])
+gulp.task('default', ["jade", "es6", "sass"])
 
-gulp.task('html', function(){
-  return gulp.src('./src/index.html')
-        .pipe(gulp.dest('./dist'))
-})
+gulp.task('jade', function buildHTML() {
+  return gulp.src('./src/index.jade')
+  .pipe(pug({
+    // Your options in here.
+  }))
+  .pipe(gulp.dest('./dist'))
+});
 gulp.task('es6', function(){
   return gulp.src('./src/js/**/*.js')
           .pipe(rollup({
@@ -19,3 +24,13 @@ gulp.task('es6', function(){
           .pipe(gulp.dest('./dist/js'))
 
 })
+
+gulp.task('sass', function () {
+  return gulp.src('./src/sass/theme.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('watch', function () {
+  gulp.watch('./src/**/*', ['html','es6','sass']);
+});
