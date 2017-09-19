@@ -16,7 +16,8 @@ gulp.task('jade', function buildHTML() {
 gulp.task('es6', function(){
   return gulp.src('./src/js/**/*.js')
           .pipe(rollup({
-            entry: './src/js/app.js'
+            input: './src/js/app.js',
+            format: 'umd'
             }))
             .pipe(babel({
               presets: ['env']

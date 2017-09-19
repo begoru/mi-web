@@ -3,3 +3,5 @@ export class Main {
     return "hello"
   }
 }
+
+console.log(Main.say())
