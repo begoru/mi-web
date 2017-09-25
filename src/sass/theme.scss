@@ -3,3 +3,13 @@
 		margin-top: 1.5em;
 	}
 }
+.section{
+	&.grid{
+		padding-top: 6rem;
+	}
+}
+.icon-block{
+	i.material-icons{
+		font-size: inherit;
+	}
+}
