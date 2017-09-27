@@ -24,7 +24,11 @@ footer{
 		display: inline;
 	}
 }
-@mixin grid{
-	.col.s12.m4{
-		padding: 0 27px;
+.grid{
+	.col{
+		padding: 27px;
+	}
+}
+footer{
+	margin-top: 60px;
 }
