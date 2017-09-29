@@ -1,0 +1,45 @@
+include _mixin
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		title Materialize
+		link(rel="shortcut icon" href="http://materializecss.com/images/favicon/apple-touch-icon-152x152.png")
+		meta(name="theme-color" content="#29b6f6")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
+		script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js")
+		link(rel='stylesheet', href='./css/theme.css')
+		script(src='./js/app.js')
+	body
+		header
+			include _navbar
+		section.welcome
+			.container
+				.row
+					.col.s12.center-align.orange-text
+						h1 Starter Template
+				.row
+					.col.s12.center-align
+						h5.light A modern responsive front-end framework based on Material Design
+				.row
+					.col.s12.center-align
+						a.btn-large.orange GET STARTED
+		section.grid
+			.container
+				.row
+					+grid(
+					"flash_on", 
+					"Speeds up development", 
+					"We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers."
+					)
+					+grid(
+					"group", 
+					"User Experience Focused",
+					"parrBy utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.afo3"
+					)
+					+grid("settings", "Easy to work with", "We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.")
+		include _footer
