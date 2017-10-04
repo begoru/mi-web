@@ -6,16 +6,19 @@ ul#nav-mobile.side-nav
 		a(href="") Contacto
 
 // Estructura del Navbar
-nav.light-blue.lighten-1
-	.container
-		a.brand-logo(href="") Logo
-		ul#nav-mobile.right.hide-on-med-and-down
-			li
-				a(href="") NavBar Link
-			li
-				a(href="") Contacto
-		a.button-collapse.top-nav.full.hide-on-large-only(href="#" data-activates="nav-mobile")
-			i.material-icons menu
+.navbar-fixed
+	nav
+		.nav-wrapper.container
+			a.brand-logo(href="")
+				img.circle(src="./img/beatrizdigitalanalyst.jpg")
+				span Beatriz González Rubio
+			ul#nav-mobile.right.hide-on-med-and-down
+				li
+					a(href="") NavBar Link
+				li
+					a(href="") Contacto
+			a.button-collapse.top-nav.full.hide-on-large-only(href="#" data-activates="nav-mobile")
+				i.material-icons menu
 		
 //Javascript del SideNav, para engatillarlo			
 script.
