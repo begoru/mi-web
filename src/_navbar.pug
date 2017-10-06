@@ -1,11 +1,25 @@
 //Estructura del SideNav
 ul#nav-mobile.side-nav
 	li
-		a(href="") NavBar Link
+		.user-view
+			.background
+				img(src="http://materializecss.com/images/office.jpg")
+			a(href="")
+				img.circle(src="./img/beatrizdigitalanalyst.jpg")
+			a
+				span.white-text.name Beatriz González Rubio
+			a(href="")
+				span.white-text.email hola@beatrizgonzalezrubio.es
 	li
-		a(href="") Contacto
-
-// Estructura del Navbar
+		a(href="") Sobre Mi
+	li
+		a(href="") Conocimientos
+	li
+		a(href="") Mis Repositorios
+	li
+		a(href="") Mis Artículos
+							
+	// Estructura del Navbar
 .navbar-fixed
 	nav
 		.nav-wrapper.container
@@ -14,12 +28,16 @@ ul#nav-mobile.side-nav
 				span Beatriz González Rubio
 			ul#nav-mobile.right.hide-on-med-and-down
 				li
-					a(href="") NavBar Link
+					a(href="") Sobre Mi
 				li
-					a(href="") Contacto
+					a(href="") Conocimientos
+				li
+					a(href="") Mis Repositorios
+				li
+					a(href="") Mis artículos
 			a.button-collapse.top-nav.full.hide-on-large-only(href="#" data-activates="nav-mobile")
 				i.material-icons menu
 		
 //Javascript del SideNav, para engatillarlo			
 script.
-	$(".button-collapse").sideNav();
+	$(".button-collapse").sideNav({closeOnClick: true});
