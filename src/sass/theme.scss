@@ -1,13 +1,10 @@
 @import "helpers";
 @import "variables";
+@import "mixin";
 @import "navbar";
 .welcome{
 	overflow: hidden;
-	background-image:url(https://dealjumbo.com/wp-content/uploads/p3169.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+	@include background("https://dealjumbo.com/wp-content/uploads/p3169.jpg");
 	height: 70vh;
 	h1{
 		margin-top: 3.5em;
@@ -26,11 +23,7 @@
 }
 .repositorios{
 	overflow: hidden;
-	background-image:url(https://dealjumbo.com/wp-content/uploads/p3169.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+	@include background("https://dealjumbo.com/wp-content/uploads/p3169.jpg");
 	height: 70vh;
 	display: flex;
 	align-items: center;
@@ -49,7 +42,4 @@ footer{
 	.col{
 		padding: 27px;
 	}
-}
-footer{
-	margin-top: 60px;
 }
