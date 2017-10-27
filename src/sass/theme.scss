@@ -24,6 +24,17 @@
 		font-size: inherit;
 	}
 }
+.repositorios{
+	overflow: hidden;
+	background-image:url(https://dealjumbo.com/wp-content/uploads/p3169.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+}
 footer{
 	a{
 		display: flex;

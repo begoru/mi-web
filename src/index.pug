@@ -6,6 +6,7 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
 		title Materialize
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
 		link(rel="shortcut icon" href="http://materializecss.com/images/favicon/apple-touch-icon-152x152.png")
 		meta(name="theme-color" content="#29b6f6")
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
@@ -64,4 +65,13 @@ html(lang='en')
 					"parrBy utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.afo3"
 					)
 					+grid("settings", "Easy to work with", "We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.")
+		section.margin-top-2.repositorios
+			.container
+				.row
+					.col.s12.center-align
+						i.fa-5x.fa.fa-github-alt(aria-hidden="true")
+						div.margin-top-1
+							a.waves-effect.waves-light.btn(href="https://github.com/begoru" target="new")
+								span Mis Repositorios
+						
 		include _footer
