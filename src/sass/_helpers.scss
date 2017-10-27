@@ -1,0 +1,22 @@
+.margin-top-1{
+	margin-top: 1rem;
+}
+.margin-top-2{
+	margin-top: 2rem;
+}
+.margin-top-3{
+	margin-top: 3rem;
+}
+.flex{
+	height: inherit;
+	display: flex;
+	&.vertical-start{
+		align-items: flex-start;
+	}
+	&.vertical-center{
+		align-items: center;
+	}
+	&.vertical-end{
+		align-items: flex-end;
+	}
+}
