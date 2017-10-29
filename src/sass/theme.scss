@@ -2,6 +2,9 @@
 @import "variables";
 @import "mixin";
 @import "navbar";
+body{
+	background-color:  #e9ebee;
+}
 .welcome{
 	overflow: hidden;
 	@include background("https://dealjumbo.com/wp-content/uploads/p3169.jpg");
