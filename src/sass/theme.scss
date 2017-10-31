@@ -25,6 +25,13 @@ body{
 		color: $primary-color;
 	}
 }
+
+.grid{
+	.col{
+		padding: 27px;
+	}
+}
+
 .repositorios{
 	overflow: hidden;
 	@include background("https://burst.shopifycdn.com/photos/in-office-working-on-laptop_4460x4460.jpg");
@@ -32,18 +39,36 @@ body{
 	display: flex;
 	align-items: center;
 }
+
 footer{
-	a{
+	.social-icons{
 		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+			a{
+				&.facebook{
+					background: $facebook-color;
+				}
+				&.linkedin{
+					background: $linkedin-color;
+				}
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 35px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				color: white;
+				padding: 25px;
+			}	
+	}
+	.footer-copyright{
+		a{
+			display: inline;
 		}
-}
-.footer-copyright{
-	a{
-		display: inline;
 	}
 }
-.grid{
-	.col{
-		padding: 27px;
-	}
-}
+
+
