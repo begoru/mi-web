@@ -56,6 +56,9 @@ footer{
 				&.twitter{
 					background: $twitter-color;
 				}
+				&.email{
+					background: $primary-color;
+				}
 				display: flex;
 				justify-content: center;
 				align-items: center;
