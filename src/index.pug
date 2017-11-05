@@ -23,14 +23,16 @@ html(lang='en')
 			include _navbar
 		section.welcome
 			.container
-				.row
-					.col.s12.center-align.white-text
+				.row.white-text.text-shadow
+					.col.s12.center-align
 						h1 Frontend Designer & Digital Anaylist Marketing
 					.col.s12.center-align
 						h2.light A modern responsive front-end framework based on Material Design
 				.row
 					.col.s12.center-align
-						a.btn-large.orange GET STARTED
+						a.btn.cyan.darken-4.waves-effect
+							i.fa.fa-download.right(aria-hidden="true")
+							span DESCARGA MI CV
 		section.aboutMe.margin-top-2#aboutMe
 			.container
 				.row
@@ -74,7 +76,7 @@ html(lang='en')
 					.col.s12.center-align
 						i.fa-5x.fa.fa-github-alt(aria-hidden="true")
 						div.margin-top-1
-							a.waves-effect.waves-light.btn(href="https://github.com/begoru" target="new")
+							a.waves-effect.btn.cyan.darken-4(href="https://github.com/begoru" target="new")
 								span Mis Repositorios
 						
 		include _footer
