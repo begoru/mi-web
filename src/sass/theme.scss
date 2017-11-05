@@ -12,7 +12,7 @@ body{
 }
 .welcome{
 	overflow: hidden;
-	@include background("https://dealjumbo.com/wp-content/uploads/p3169.jpg");
+	@include background("https://dealjumbo.com/wp-content/uploads/p3169.jpg",true);
 	height: 70vh;
 	h1{
 		margin-top: 3.5em;
@@ -39,7 +39,7 @@ body{
 
 .repositorios{
 	overflow: hidden;
-	@include background("https://burst.shopifycdn.com/photos/in-office-working-on-laptop_4460x4460.jpg");
+	@include background("https://burst.shopifycdn.com/photos/in-office-working-on-laptop_4460x4460.jpg",true);
 	height: 50vh;
 	display: flex;
 	align-items: center;
