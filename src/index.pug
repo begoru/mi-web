@@ -30,7 +30,7 @@ html(lang='en')
 						h2.light A modern responsive front-end framework based on Material Design
 				.row
 					.col.s12.center-align
-						a.btn.cyan.darken-4.waves-effect
+						a.btn.waves-effect
 							i.fa.fa-download.right(aria-hidden="true")
 							span DESCARGA MI CV
 		section.aboutMe.margin-top-2#aboutMe
@@ -44,13 +44,19 @@ html(lang='en')
 						.card
 							.card-image
 								img(src="http://materializecss.com/images/sample-1.jpg")
-							.card-content
-								span.card-title Sobre Mi
-								p Soy una tarjeta muy simple. Soy buena mostrando pequeños trozos de información. Soy conveniente porque requiero pocas etiquetas para usarme efectivamente.
+							.card-content.center-align
+								span.card-title
+									strong Certificados
+								p Haz clic en este enlace para ver mi certificado.
+							.card-action.center-align
+								a.btn.waves-effect
+									span Google Analytics
+									i.fa.fa-google.left(aria-hidden="true")
 					.col.s12.m6.flex.vertical-center
 						div
-							p Soy una tarjeta muy simple. Soy buena mostrando pequeños trozos de información. Soy conveniente porque requiero pocas etiquetas para usarme efectivamente.
-							p Soy una tarjeta muy simple. Soy buena mostrando pequeños trozos de información. Soy conveniente porque requiero pocas etiquetas para usarme efectivamente.
+							p Apasionada del marketing digital me embarqué en este mundo trabajando inicialmente en el sector de la moda como asesora de imagen durante más de 10 años; siendo consciente de la transformación digital que estaban experimentando concretamente el sector en el que me encontraba, decidí a abrirme camino en cómo mejorar la experiencia de compra de un usuario a través de herramientas como Google Adwords y Google Analytics de las cuales obtuve certificado en ambas; arranca aquí mi viaje hacia el marketing digital 2.0.
+							
+							p Después de obtener estos certificados, me ilusioné con la idea de tener un espacio propio diseñado por mi y crear contenido, artículos, y formar parte de una comunidad
 
 		section.margin-top-2#misConocimientos
 			.container
@@ -76,7 +82,7 @@ html(lang='en')
 					.col.s12.center-align
 						i.fa-5x.fa.fa-github-alt(aria-hidden="true")
 						div.margin-top-1
-							a.waves-effect.btn.cyan.darken-4(href="https://github.com/begoru" target="new")
+							a.waves-effect.btn(href="https://github.com/begoru" target="new")
 								span Mis Repositorios
 						
 		include _footer

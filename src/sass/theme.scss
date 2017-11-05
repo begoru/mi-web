@@ -3,9 +3,10 @@
 @import "mixin";
 @import "navbar";
 body{
-	background-color:  #e9ebee;
+	background-color:  $body-color;
 }
 .btn{
+	background-color: $button-color-default;
 	&:hover{
 		background-color: $primary-color !important;
 	}
