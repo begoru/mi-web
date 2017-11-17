@@ -36,5 +36,5 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/**/*', ['jade','es6','sass']);
+  gulp.watch('./src/**/*', ['assets','jade','es6','sass']);
 });
