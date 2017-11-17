@@ -1,7 +1,6 @@
-mixin grid(icon, title, message)
+mixin grid(imageUrl, title, message)
 	.col.s12.m4
-		.icon-block
-			h2.center
-				i.material-icons #{icon}
-			h5.center-align #{title}
-			p.light !{message}
+		.icon-block.center-align
+			img(src=imageUrl)
+			h5 #{title}
+			p.light.justify-align !{message}

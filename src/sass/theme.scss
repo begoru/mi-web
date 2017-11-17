@@ -26,15 +26,17 @@ body{
 }
 
 .icon-block{
-	i.material-icons{
-		font-size: inherit;
-		color: $primary-color;
+	img{
+		width: 100%;
 	}
-}
-
-.grid{
-	.col{
-		padding: 27px;
+	i{
+		&.material-icons{
+			font-size: inherit;
+			color: $primary-color;
+		}
+	}
+	h5{
+		min-height: 54px;
 	}
 }
 
