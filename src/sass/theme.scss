@@ -12,6 +12,13 @@ body{
 		background-color: $primary-color !important;
 	}
 }
+.section-title{
+	font-size: 1.5em;
+	@media (min-width: 600px){
+		font-size: 2.5em;
+	}
+	@extend .libre-baskerville;
+}
 .welcome{
 	overflow: hidden;
 	@include background("https://dealjumbo.com/wp-content/uploads/p3169.jpg",true);
@@ -27,6 +34,10 @@ body{
 }
 
 .icon-block{
+	h5{
+		font-size: 1.3em;
+		min-height: 54px;
+	}
 	img{
 		width: 100%;
 	}
@@ -36,9 +47,7 @@ body{
 			color: $primary-color;
 		}
 	}
-	h5{
-		min-height: 54px;
-	}
+	
 }
 
 .repositorios{
