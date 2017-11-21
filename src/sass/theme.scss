@@ -57,6 +57,13 @@ body{
   align-items: center;
 	@include background("https://burst.shopifycdn.com/photos/in-office-working-on-laptop_4460x4460.jpg",true);
 	height: 50vh;
+	h4{
+		@extend .libre-baskerville;
+		font-style: italic;
+		font-size: 2em;
+		color: white;
+    text-shadow: 2px 2px 1px black;
+	}
 }
 
 footer{
