@@ -51,13 +51,12 @@ body{
 	}
 	
 }
-
-.repositorios{
+.bg-separated{
 	overflow: hidden;
+	display: flex;
+  align-items: center;
 	@include background("https://burst.shopifycdn.com/photos/in-office-working-on-laptop_4460x4460.jpg",true);
 	height: 50vh;
-	display: flex;
-	align-items: center;
 }
 
 footer{
