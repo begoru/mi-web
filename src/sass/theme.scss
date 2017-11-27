@@ -21,7 +21,7 @@ body{
 }
 .welcome{
 	overflow: hidden;
-	@include background("https://dealjumbo.com/wp-content/uploads/p3169.jpg",true);
+	@include background("/assets/imagen_welcome.jpg",true);
 	height: 70vh;
 	h1{
 		margin-top: 3.5em;
