@@ -32,7 +32,15 @@ body{
 		margin-top: .2em;
 	}
 }
-
+#aboutMe{
+	.row:last-child{	
+		.col:last-child{
+			@media(min-width: 600px){
+				padding-left: 3em;
+			}
+		}
+	}
+}
 .icon-block{
 	h5{
 		font-size: 1.3em;
