@@ -25,6 +25,9 @@
 .side-nav{
 	.user-view{
 		.background{
+			img{
+				width: 100%;
+			}
 			background-color: $primary-color;
 		}
 	}
