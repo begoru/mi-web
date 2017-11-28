@@ -67,8 +67,24 @@ html(lang='en')
 				.row
 					.col.s12.center-align
 						h2.section-title Mis Conocimientos en Marketing Digital
-			.container
 				.row
+					+grid(
+					"", 
+					"Google Adwords y Google Analytics", 
+					"Para el diseño de campañas de publicidad, utilizo G. Adwords a través de su herramienta offline <strong> Editor de Adwords.</strong> Uso una cuenta <strong> MCC </strong> para la gestión de múltiples cuentas. Por otro lado, en G. Analytics, partiendo de dos vistas creadas (desarrollo y producción) con sus filtros correspondientes, configuro <strong> conversiones </strong> y estudio su seguimiento, definiendo embudos de conversión y alertas personalizadas."
+					)
+					+grid(
+					"group", 
+					"Google Tag Manager",
+					"Hice un curso de Google Tag Manager que me ha permitido ganar autonomía y que utilizo habitualmente para todo lo relacionado con Analytics: implementación de su etiqueta en una web, creación de eventos a través de selectores CSS y creación de variables."
+					)
+					+grid(
+					"settings",
+					"Git y Github",
+					"A la hora de trabajar con código, estructuro los proyectos con <strong> Git </strong>, realizando commits de cambios y/o actualizaciones, push y pull...; en ocasiones utilizo la terminal y en otras me apoyo del programa de Git; terminada la fase de spring, hago el pull request en <strong> Github </strong>. Para no 'ensuciar' el código, en el proceso inicial del proyecto creo siempre una rama de preproducción ('devel') paralela a la de producción ('master') que se mergeará con ésta última al completar una 'feature' del proyecto."
+					)
+					.col.s12.line
+						hr
 					+grid(
 					"", 
 					"Google Adwords y Google Analytics", 
