@@ -24,15 +24,15 @@ ul#nav-mobile.side-nav
 	nav
 		.nav-wrapper.container
 			a.brand-logo(href="./")
-				img.circle(src="./assets/beatrizdigitalanalyst.jpg")
+				img.circle.tooltipped(src="./assets/beatrizdigitalanalyst.jpg"  data-position="bottom" data-delay="50" data-tooltip="Bienvenido")
 				span.hide-on-med-and-down Beatriz González Rubio
 			ul#nav-mobile.right.hide-on-med-and-down
 				li
-					a(href="#aboutMe") Sobre Mi
+					a.tooltipped(href="#aboutMe" data-position="bottom" data-delay="50" data-tooltip="Haz clic para conocerme") Sobre Mi
 				li
-					a(href="#misConocimientos") Conocimientos
+					a.tooltipped(href="#misConocimientos" data-position="bottom" data-delay="50" data-tooltip="Descubre mi perfil técnico") Conocimientos
 				li
-					a(href="#misRepositorios") Mis Repositorios
+					a.tooltipped(href="#misRepositorios" data-position="bottom" data-delay="50" data-tooltip="Echa un vistazo a mis proyectos públicos") Mis Repositorios
 				//li
 					a(href="") Mis artículos
 			a.button-collapse.top-nav.full.hide-on-large-only(href="#" data-activates="nav-mobile")
