@@ -70,32 +70,42 @@ body{
 }
 
 .horizontal-line{
+	$width: 200px;
 	display: inline-block;
 	position: relative;
 	font-style: italic;
-	&:hover{
-		&::before{
-			width: 400px;
-			left: -420px;
-		}
-		&::after{
-			width: 400px;
-			right: -420px;
-		}
-	}
+	//Creación línea horizontal izquierda (before) y dcha (after)
 	&::before,&::after{
 		content: "";
 		position:absolute;
-		width: 200px;
+		width: $width;
 		height: 2px;
 		background-color: black;
 		top: 0.6em;
+		//Tiempo de volver a su width inicial
+		transition: all 1000ms linear;
 		}
+	// Desplazamiento de las líneas izda y dcha más a la izda. para no situarse sobre el texto
 	&::before{
-		left: -220px;
+		left: -$width - 20px;
 	}
 	&::after{
-		right: -220px;
+		right: -$width - 20px;
+	}
+	// Efecto de la línea (duplicidad de su width) al hacer un hover
+	&:hover{
+		&::before,&::after{
+			width: $width * 2;
+			//Tiempo el conseguir el efecto de duplicidad de su width
+			transition: all 1000ms linear;
+			
+		}
+		&::before{
+			left: (-$width * 2)- 20px;
+		}
+		&::after{
+			right: (-$width * 2)- 20px;
+		}
 	}
 }
 .bg-separated{
