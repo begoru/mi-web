@@ -10,7 +10,7 @@ gulp.task('assets', function() {
         .pipe(gulp.dest('./dist/assets'))
 })
 gulp.task('jade', function buildHTML() {
-  return gulp.src('./src/index.pug')
+  return gulp.src(['./src/index.pug', './src/404.pug'])
   .pipe(pug({
     // Your options in here.
   }))

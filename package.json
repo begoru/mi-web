@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "postinstall": "npm run build",
     "build": "gulp",
     "browser": "http-server ./dist -o -s -c-1",
-    "watch":"gulp watch",
+    "watch": "gulp watch",
     "server": "npm-run-all browser watch"
   },
   "author": "",
@@ -20,5 +22,8 @@
     "gulp-rollup": "^2.14.0",
     "gulp-sass": "^3.1.0",
     "npm-run-all": "^4.1.2"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
