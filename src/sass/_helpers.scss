@@ -1,0 +1,55 @@
+//Capital letter
+.capital-letter{
+	&:first-letter{
+		font-size: 4.9em;
+    float: left;
+    margin-right: 0.2em;
+    line-height: 0.9em;
+    @extend .libre-baskerville;
+	}
+}
+strong{
+	font-weight: bold;
+}
+
+//Justify text
+.justify-align{
+	text-align: justify;
+}
+//Margins
+.margin-top-1{
+	margin-top: 1rem;
+}
+.margin-top-2{
+	margin-top: 2rem;
+}
+.margin-top-3{
+	margin-top: 3rem;
+}
+
+//separated lines
+.line{
+	margin: 2em 0;
+	hr{
+		border-top: 1px solid #616161;
+	}
+}
+
+//Shadows
+.text-shadow{
+	text-shadow: 1px 2px 4px black;
+}
+
+.flex{
+	height: inherit;
+	display: flex;
+	&.vertical-start{
+		align-items: flex-start;
+	}
+	&.vertical-center{
+		align-items: center;
+	}
+	&.vertical-end{
+		align-items: flex-end;
+	}
+}

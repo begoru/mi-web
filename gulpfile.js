@@ -4,10 +4,13 @@ let rollup = require('gulp-rollup');
 let sass = require('gulp-sass');
 var pug = require('gulp-pug');
 
-gulp.task('default', ["jade", "es6", "sass"])
-
+gulp.task('default', ["assets","jade", "es6", "sass"])
+gulp.task('assets', function() {
+  return gulp.src('./src/assets/**/*')
+        .pipe(gulp.dest('./dist/assets'))
+})
 gulp.task('jade', function buildHTML() {
-  return gulp.src('./src/index.pug')
+  return gulp.src(['./src/index.pug', './src/404.pug'])
   .pipe(pug({
     // Your options in here.
   }))
@@ -33,5 +36,5 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/**/*', ['jade','es6','sass']);
+  gulp.watch('./src/**/*', ['assets','jade','es6','sass']);
 });

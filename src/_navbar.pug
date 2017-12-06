@@ -1,22 +1,43 @@
-//Estructura del SideNav
+//Menú mobile
 ul#nav-mobile.side-nav
 	li
-		a(href="") NavBar Link
+		.user-view
+			.background
+				img(src="./assets/imagen_sidenav.jpg")
+			a(href="")
+				img.circle(src="./assets/beatrizdigitalanalyst.jpg")
+			a
+				span.white-text.name Beatriz González Rubio
+			a(href="")
+				span.white-text.email hola@beatrizgonzalezrubio.es
 	li
-		a(href="") Contacto
-
-// Estructura del Navbar
-nav.light-blue.lighten-1
-	.container
-		a.brand-logo(href="") Logo
-		ul#nav-mobile.right.hide-on-med-and-down
-			li
-				a(href="") NavBar Link
-			li
-				a(href="") Contacto
-		a.button-collapse.top-nav.full.hide-on-large-only(href="#" data-activates="nav-mobile")
-			i.material-icons menu
+		a(href="#aboutMe") Sobre Mi
+	li
+		a(href="#misConocimientos") Conocimientos
+	li
+		a(href="#misRepositorios") Mis Repositorios
+	//li
+		a(href="") Mis Artículos
+							
+	// Estructura del Navbar
+.navbar-fixed
+	nav
+		.nav-wrapper.container
+			a.brand-logo(href="./")
+				img.circle.tooltipped(src="./assets/beatrizdigitalanalyst.jpg"  data-position="bottom" data-delay="50" data-tooltip="Bienvenido")
+				span.hide-on-med-and-down Beatriz González Rubio
+			ul#nav-mobile.right.hide-on-med-and-down
+				li
+					a.tooltipped(href="#aboutMe" data-position="bottom" data-delay="50" data-tooltip="Haz clic para conocerme") Sobre Mi
+				li
+					a.tooltipped(href="#misConocimientos" data-position="bottom" data-delay="50" data-tooltip="Descubre mi perfil técnico") Conocimientos
+				li
+					a.tooltipped(href="#misRepositorios" data-position="bottom" data-delay="50" data-tooltip="Echa un vistazo a mis proyectos públicos") Mis Repositorios
+				//li
+					a(href="") Mis artículos
+			a.button-collapse.top-nav.full.hide-on-large-only(href="#" data-activates="nav-mobile")
+				i.material-icons menu
 		
 //Javascript del SideNav, para engatillarlo			
 script.
-	$(".button-collapse").sideNav();
+	$(".button-collapse").sideNav({closeOnClick: true});

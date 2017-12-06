@@ -5,9 +5,11 @@ html(lang='en')
 		meta(charset='UTF-8')
 		meta(name='viewport', content='width=device-width')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
-		title Materialize
-		link(rel="shortcut icon" href="http://materializecss.com/images/favicon/apple-touch-icon-152x152.png")
+		title Beatriz González Rubio
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+		link(rel="shortcut icon" href="./assets/beatrizdigitalanalyst.jpg")
 		meta(name="theme-color" content="#29b6f6")
+		include _seo
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
 		script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js")
@@ -15,31 +17,97 @@ html(lang='en')
 		link(rel='stylesheet', href='./css/theme.css')
 		script(src='./js/app.js')
 	body
+		.fixed-action-btn
+			a.btn-floating.btn-large.waves-effect.waves-light.hide-on-med-and-up(href="tel:622086461")
+				i.fa.fa-phone(aria-hidden="true")
 		header
 			include _navbar
 		section.welcome
 			.container
-				.row
-					.col.s12.center-align.orange-text
-						h1 Starter Template
+				.row.white-text.text-shadow
+					.col.s12.center-align
+						h1 Frontend Designer & Digital Analyst Marketing
+					.col.s12.center-align
+						h2.light Si buscas una persona ilusionada con el sector digital
 				.row
 					.col.s12.center-align
-						h5.light A modern responsive front-end framework based on Material Design
-				.row
-					.col.s12.center-align
-						a.btn-large.orange GET STARTED
-		section.grid
+						a.btn.waves-effect(href="https://drive.google.com/open?id=1GR0cfbA_2761DsLhNIFHlLnfXnkFNbHT" target="new")
+							i.fa.fa-download.right(aria-hidden="true")
+							span DESCARGA MI CV
+		section.aboutMe.margin-top-2#aboutMe
 			.container
 				.row
+					.col.s12.center-align
+						+horizontal-line("Sobre Mi")
+				.row
+					.col.s12.m5
+						.card
+							.card-image
+								img(src="./assets/imagen_certificados.jpg")
+							.card-content.center-align
+								span.card-title
+									strong Certificados
+								p Haz clic en este enlace para ver mi certificado.
+							.card-action.center-align
+								a.btn.waves-effect(href="https://www.google.es/partners/?hl=es#i_profile;idtf=100279515845469173199;" target="_blank")
+									span Google Analytics
+									i.fa.fa-google.left(aria-hidden="true")
+					.col.s12.m7.justify-align
+							p.source-sans-pro.capital-letter Apasionada del marketing digital me embarqué en este mundo trabajando inicialmente en el sector de la moda como asesora de imagen durante más de 10 años; siendo consciente de la transformación digital que estaba experimentando el sector en el que me encontraba, decidí renovar mi perfil, preparándome en herramientas como #[strong Google Adwords] y #[strong Google Analytics] de las cuales obtuve certificado en ambas; arranca aquí mi viaje hacia el marketing digital 2.0.
+
+							p A partir de aquí, entré en contacto con otras herramientas de Google también muy útiles como #[strong Google Tag Manager], que utilizo para facilitarme tareas relacionadas con Analytics.
+							p Posteriormente, creí que sería buena idea tener un espacio propio, y decidí prepararme en #[strong HTML5] y #[strong CSS], utilizando para ambas tecnologías: #[strong Pug] y #[strong Sass] como preprocesadores y apoyándome en #[strong Materialize] como framework; todo ello para lograr una mayor visibilidad que me permitiera crear un espacio donde aportar contenido de interés, artículos propios que inviten a la reflexión y respuesta, y formar parte de una comunidad apasionada por hacer cosas enfocadas a crear un buen user experiencie.
+		section.bg-separated
+			.container
+				.row
+					.col.s12.center-align
+						h4 Saca el lado positivo a todo lo que te ocurra, a veces, no será perceptible, pero está.
+
+		section.margin-top-2#misConocimientos
+			.container
+				.row
+					.col.s12.center-align
+						+horizontal-line("Mis Conocimientos") 
+				.row
 					+grid(
-					"flash_on", 
-					"Speeds up development", 
-					"We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers."
+					"./assets/icons/html5.svg", 
+					"HTML5 y Pug", 
+					"Conozco el lenguaje de marcado de HTML en su versión 5ª <strong> (HTML5) </strong>, para maquetar landings y vistas. Utilizo el preprocesador de <strong> Pug </strong> (antes Jade) para tener mis proyectos bien estructurados y escalables. Por otra parte, tras descubrir Pug, desarrollo mixing ya que aportan agilidad a un proyecto."
 					)
 					+grid(
-					"group", 
-					"User Experience Focused",
-					"parrBy utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.afo3"
+					"./assets/icons/sass.svg",
+					"Css y Sass",
+					"Hice un curso de <strong> Css </strong> y descubrí una manera creativa de dar vida a una web, dando forma forma y estilos a las ideas. Pongo especial atención en crear estructuras mobile first apoyándome en el grid de Materialize y en @media (media query). Intento hacer un Css reutilizable y escalable apoyándome en pseudoelementos, pseudoclases y pseudoselectores. Para potenciar más el Css que construía, aprendí <strong> Sass </strong> y así utilizar variables, mixins, selectores anidados, etc..."
 					)
-					+grid("settings", "Easy to work with", "We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.")
+					+grid(
+					"./assets/icons/seo.svg",
+					"SEO",
+					"Siendo consciente de la importancia de que un proyecto lleve intrínseco un buen <strong> SEO </strong>, hice un curso de ello y me ha permitido adquirir buenas prácticas como: incluir metaetiquetas de SEO, utilizar keywords para mejorar el posicionamiento, incluir el atributo 'alt' a las imágenes. En mis proyectos, pongo especial atención a la creación de un <strong> Sitemap </strong> facilitando a Google su labor de indexación."
+					)
+					.col.s12.line
+						hr
+					+grid(
+					"./assets/icons/adwords_analytics.svg",
+					"Google Adwords y Google Analytics",
+					"Para el diseño de campañas de publicidad, utilizo G. Adwords a través de su herramienta offline <strong> Editor de Adwords.</strong> Uso una cuenta <strong> MCC </strong> para la gestión de múltiples cuentas. Por otro lado, en G. Analytics, partiendo de dos vistas creadas (desarrollo y producción) con sus filtros correspondientes, configuro <strong> conversiones </strong> y estudio su seguimiento, definiendo embudos de conversión y alertas personalizadas."
+					)
+					+grid(
+					"./assets/icons/tagmanager.svg",
+					"Google Tag Manager",
+					"Hice un curso de <strong> Google Tag Manager </strong> que me ha permitido ganar autonomía y que utilizo habitualmente para todo lo relacionado con Analytics: implementación de su etiqueta en una web, creación de eventos a través de selectores CSS y creación de variables."
+					)
+					+grid(
+					"./assets/icons/github.svg",
+					"Git y Github",
+					"A la hora de trabajar con código, estructuro los proyectos con <strong> Git </strong>, realizando commits de cambios y/o actualizaciones, push y pull...; en ocasiones utilizo la terminal y en otras me apoyo del programa de Git; terminada la fase de spring, hago el pull request en <strong> Github </strong>. Para no 'ensuciar' el código, en el proceso inicial del proyecto creo siempre una rama de preproducción ('devel') paralela a la de producción ('master') que se mergeará con ésta última al completar una 'feature' del proyecto."
+					)
+		section.margin-top-2.bg-separated#misRepositorios
+			.container
+				.row
+					.col.s12.center-align
+						i.fa-5x.fa.fa-github-alt(aria-hidden="true")
+						div.margin-top-1
+							a.waves-effect.btn(href="https://github.com/begoru" target="new")
+								span Mis Repositorios
+
 		include _footer

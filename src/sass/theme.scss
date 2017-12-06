@@ -1,34 +1,161 @@
-
+@import "helpers";
+@import "variables";
+@import "fonts";
+@import "mixin";
+@import "navbar";
+body{
+	background-color:  $body-color;
+}
+.btn{
+	background-color: $button-color-default;
+	&:hover{
+		background-color: $primary-color !important;
+	}
+}
+.section-title{
+	font-size: 1.5em;
+	@media (min-width: 600px){
+		font-size: 2.5em;
+	}
+	@extend .libre-baskerville;
+}
 .welcome{
+	overflow: hidden;
+	@include background("/assets/imagen_welcome.jpg",true);
+	height: 70vh;
 	h1{
-		margin-top: 1.5em;
+		margin-top: 3.5em;
+		font-size: 2.5em;
+	}
+	h2{
+		font-size: 1.5em;
+		margin-top: .2em;
 	}
 }
-.section{
-	&.grid{
-		padding-top: 6rem;
-	}
-}
-.icon-block{
-	i.material-icons{
-		font-size: inherit;
-	}
-}
-footer{
-	a{
-		display: flex;
+#aboutMe{
+	.row:last-child{
+		.col:last-child{
+			@media(min-width: 600px){
+				padding-left: 3em;
+			}
 		}
-}
-.footer-copyright{
-	a{
-		display: inline;
 	}
 }
-.grid{
-	.col{
-		padding: 27px;
+
+//Mixins
+.icon-block{
+	h5{
+		font-size: 1.3em;
+		min-height: 54px;
+		font-weight: 600;
+    color: #006064;
+	}
+	img{
+		&:hover{
+			transform: scale(1.5) rotate(360deg);
+			transition: all 700ms ease 0ms;
+		}
+		width: 35%;
+		transform: scale(1) rotate(0deg);
+		transition: all 700ms ease 0ms;
+		
+	}
+	i{
+		&.material-icons{
+			font-size: inherit;
+			color: $primary-color;
+		}
+	}
+
+}
+
+.horizontal-line{
+	$width: 200px;
+	display: inline-block;
+	position: relative;
+	font-style: italic;
+	//Creación línea horizontal izquierda (before) y dcha (after)
+	&::before,&::after{
+		content: "";
+		position:absolute;
+		width: $width;
+		height: 2px;
+		background-color: black;
+		top: 0.6em;
+		//Tiempo de volver a su width inicial
+		transition: all 1000ms linear;
+		}
+	// Desplazamiento de las líneas izda y dcha más a la izda. para no situarse sobre el texto
+	&::before{
+		left: -$width - 20px;
+	}
+	&::after{
+		right: -$width - 20px;
+	}
+	// Efecto de la línea (duplicidad de su width) al hacer un hover
+	&:hover{
+		&::before,&::after{
+			width: $width * 2;
+			//Tiempo el conseguir el efecto de duplicidad de su width
+			transition: all 1000ms linear;
+			
+		}
+		&::before{
+			left: (-$width * 2)- 20px;
+		}
+		&::after{
+			right: (-$width * 2)- 20px;
+		}
 	}
 }
+.bg-separated{
+	overflow: hidden;
+	display: flex;
+  align-items: center;
+	@include background("https://burst.shopifycdn.com/photos/in-office-working-on-laptop_4460x4460.jpg",true);
+	height: 50vh;
+	h4{
+		@extend .libre-baskerville;
+		font-style: italic;
+		font-size: 2em;
+		color: white;
+    text-shadow: 2px 2px 1px black;
+	}
+}
+
 footer{
-	margin-top: 60px;
+	.social-icons{
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+			a{
+				&.facebook{
+					background: $facebook-color;
+				}
+				&.linkedin{
+					background: $linkedin-color;
+				}
+				&.twitter{
+					background: $twitter-color;
+				}
+				&.email{
+					background: $primary-color;
+				}
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 35px;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				color: white;
+			}
+	}
+	.footer-copyright{
+		a{
+			display: inline;
+			font-weight: bold;
+		}
+	}
 }

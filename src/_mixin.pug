@@ -1,7 +1,13 @@
-mixin grid(icon, title, message)
+//Mixin grid "Mis conocimientos"
+
+mixin grid(imageUrl, title, message)
 	.col.s12.m4
-		.icon-block
-			h2.center.light-blue-text
-				i.material-icons #{icon}
-			h5.center-align #{title}
-			p.light #{message}
+		.icon-block.center-align
+			img(src=imageUrl)
+			h5.libre-baskerville #{title}
+			p.source-sans-pro.light.justify-align !{message}
+			
+//Mixin horizontal line for titles
+
+mixin horizontal-line(title)
+	h2.section-title.horizontal-line #{title}
