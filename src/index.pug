@@ -16,7 +16,9 @@ html(lang='en')
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js")
 		link(rel='stylesheet', href='./css/theme.css')
 		script(src='./js/app.js')
+		+tag-manager-head()
 	body
+		+tag-manager-body()
 		.fixed-action-btn
 			a.btn-floating.btn-large.waves-effect.waves-light.hide-on-med-and-up(href="tel:622086461")
 				i.fa.fa-phone(aria-hidden="true")
