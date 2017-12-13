@@ -1,5 +1,12 @@
-doctype html
-html(lang='en')
-  head
-  body
-    h1 404
+extends layaout
+block seo
+	title Página no encontrada
+block body
+	section.welcome.fullscreen
+		.container
+			.row.white-text.text-shadow
+				.col.s12.center-align
+					h1.title Opps, parece que no has encontrado la página que buscabas
+					a.btn(href="./")
+						span Volver al inicio
+
