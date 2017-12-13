@@ -1,24 +1,7 @@
-include _mixin
-doctype html
-html(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width')
-		meta(http-equiv='X-UA-Compatible', content='ie=edge')
-		title Beatriz González Rubio
-		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
-		link(rel="shortcut icon" href="./assets/beatrizdigitalanalyst.jpg")
-		meta(name="theme-color" content="#26a69a")
+extends layaout
+block seo
 		include _seo
-		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
-		script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js")
-		link(rel='stylesheet', href='./css/theme.css')
-		script(src='./js/app.js')
-		+tag-manager-head()
-	body
-		+tag-manager-body()
+block body
 		.fixed-action-btn
 			a.btn-floating.btn-large.waves-effect.waves-light.hide-on-med-and-up(href="tel:622086461")
 				i.fa.fa-phone(aria-hidden="true")
@@ -30,7 +13,7 @@ html(lang='en')
 					.col.s12.center-align
 						h1 Frontend Designer & Digital Marketing Analyst
 					.col.s12.center-align
-						h2.light Si buscas una persona ilusionada con el sector digital
+						h2.subtitle.light Si buscas una persona ilusionada con el sector digital
 				.row
 					.col.s12.center-align
 						a.btn.waves-effect(href="https://drive.google.com/open?id=1GR0cfbA_2761DsLhNIFHlLnfXnkFNbHT" target="new")
