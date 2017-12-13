@@ -71,8 +71,7 @@ body{
 }
 
 .horizontal-line{
-	$width: 200px;
-	
+	$width: 30%;
 	display: inline-block;
 	position: relative;
 	font-style: italic;
@@ -90,10 +89,10 @@ body{
 		}
 	// Desplazamiento de las líneas izda y dcha más a la izda. para no situarse sobre el texto
 	&::before{
-		left: -$width - 20px;
+		left: -$width - 10%;
 	}
 	&::after{
-		right: -$width - 20px;
+		right: -$width - 10%;
 	}
 	// Efecto de la línea (duplicidad de su width) al hacer un hover
 	&:hover{
@@ -104,10 +103,10 @@ body{
 			
 		}
 		&::before{
-			left: (-$width * 2)- 20px;
+			left: (-$width * 2)- 10%;
 		}
 		&::after{
-			right: (-$width * 2)- 20px;
+			right: (-$width * 2)- 10%;
 		}
 	}
 }
