@@ -13,7 +13,7 @@
     "browser": "http-server ./dist -o -s -c-1",
     "watch": "gulp watch",
     "server": "npm-run-all browser watch",
-		"dev": "gulp && gulp watch"
+    "dev": "gulp && gulp watch"
   },
   "author": "",
   "license": "ISC",
