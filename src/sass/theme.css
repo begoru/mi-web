@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+.capital-letter:first-letter {
+  font-size: 4.9em;
+  float: left;
+  margin-right: 0.2em;
+  line-height: 0.9em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.fullscreen {
+  height: 100vh !important;
+}
+
+.justify-align {
+  text-align: justify;
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+.margin-top-2 {
+  margin-top: 2rem;
+}
+
+.margin-top-3 {
+  margin-top: 3rem;
+}
+
+.line {
+  margin: 2em 0;
+}
+
+.line hr {
+  border-top: 1px solid #616161;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px 4px black;
+}
+
+.flex {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex.vertical-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex.vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex.vertical-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.libre-baskerville, .capital-letter:first-letter, .section-title, .bg-separated h4 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* 
+Este mixin pinta una imagen como fondo.
+$image es la url de la imagen que va a pintarse (variable obligatoria).
+$parallax es la opción de dejar la imagen fija (true) o no (false); variable opcional.
+*/
+.navbar-fixed nav {
+  background-color: #26a69a;
+}
+
+.navbar-fixed nav .nav-wrapper a.brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.navbar-fixed nav .nav-wrapper a.brand-logo img {
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+}
+
+.navbar-fixed nav .nav-wrapper a.brand-logo span {
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+.side-nav .user-view .background {
+  background-color: #26a69a;
+}
+
+.side-nav .user-view .background img {
+  width: 100%;
+}
+
+body {
+  background-color: #e9ebee;
+}
+
+.btn {
+  background-color: #006064;
+}
+
+.btn:hover {
+  background-color: #26a69a !important;
+}
+
+.section-title {
+  font-size: 1.5em;
+}
+
+@media (min-width: 600px) {
+  .section-title {
+    font-size: 2.5em;
+  }
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-image: url("/assets/imagen_welcome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.welcome .title {
+  font-size: 2.5em;
+}
+
+.welcome .subtitle {
+  font-size: 1.5em;
+  margin-top: .2em;
+}
+
+@media (min-width: 600px) {
+  #aboutMe .row:last-child .col:last-child {
+    padding-left: 3em;
+  }
+}
+
+.icon-block h5 {
+  font-size: 1.3em;
+  min-height: 54px;
+  font-weight: 600;
+  color: #006064;
+}
+
+.icon-block img {
+  width: 35%;
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+  -webkit-transition: all 700ms ease 0ms;
+  transition: all 700ms ease 0ms;
+}
+
+.icon-block img:hover {
+  -webkit-transform: scale(1.5) rotate(360deg);
+          transform: scale(1.5) rotate(360deg);
+  -webkit-transition: all 700ms ease 0ms;
+  transition: all 700ms ease 0ms;
+}
+
+.icon-block i.material-icons {
+  font-size: inherit;
+  color: #26a69a;
+}
+
+.horizontal-line {
+  display: inline-block;
+  position: relative;
+  font-style: italic;
+}
+
+.horizontal-line::before, .horizontal-line::after {
+  overflow: hidden;
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  background-color: black;
+  top: 0.6em;
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+.horizontal-line::before {
+  left: -40%;
+}
+
+.horizontal-line::after {
+  right: -40%;
+}
+
+.horizontal-line:hover::before, .horizontal-line:hover::after {
+  width: 60%;
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+.horizontal-line:hover::before {
+  left: -70%;
+}
+
+.horizontal-line:hover::after {
+  right: -70%;
+}
+
+.bg-separated {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://burst.shopifycdn.com/photos/in-office-working-on-laptop_4460x4460.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+.bg-separated h4 {
+  font-style: italic;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+}
+
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social-icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 35px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+}
+
+footer .social-icons a.facebook {
+  background: #3b5998;
+}
+
+footer .social-icons a.linkedin {
+  background: #0077b5;
+}
+
+footer .social-icons a.twitter {
+  background: #00aced;
+}
+
+footer .social-icons a.email {
+  background: #26a69a;
+}
+
+footer .footer-copyright a {
+  display: inline;
+  font-weight: bold;
+}
+/*# sourceMappingURL=theme.css.map */
