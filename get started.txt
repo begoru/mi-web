@@ -1,0 +1,6 @@
+Cosas a tener en cuenta al abrir Visual Studio (editor de código)
+1. Hay que abrir una terminal para arrancar el proyecto en el navegador:
+
+npm run http-server ./dist -o -s -c-1
+
+2. 
