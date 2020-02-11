@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /assets
+Disallow: /js
+Disallow: / sass
+Disallow: /*.babelrc
+Disallow: /*.gitgnore
+Disallow: /get started.txt
+Disallow: /*js
+Disallow: /npm-debug.log
+Disallow: /package-lock.json
+Disallow: / README.md
+Alow: /assets/certificado_google_analytics_22-08-19.pdf
